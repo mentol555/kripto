@@ -15,7 +15,7 @@ def build_merkel_tree(transactions):
 	print("---------Merkel tree---------\n")
 	while (len(transactions) >= 2):
 		for i in range(0, len(transactions), 2):
-			tmp.append(hash_t(transactions[i] + transactions[i+1]))  # ket hasht osszekonkat aztan hash
+			tmp.append(hash_t(transactions[i] + transactions[i+1]))  ## ket hasht osszekonkat aztan hash
 		print("also szint")
 		print(transactions)
 		transactions = tmp

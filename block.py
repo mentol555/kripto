@@ -30,7 +30,7 @@ def find_nonce(block):
 		hash = hash_block(block.get_block())
 		if hash.startswith(prefix):
 			print("\n----------POW----------")
-			print("hash: "+ hash +"\nFound with nonce:"+str(i))
+			print("hash: " + hash +"\nFound with nonce:"+str(i))
 			return hash
 
 

@@ -27,7 +27,7 @@ class Transaction:
 		signature = self.sign_transaction()
 		print("\nsignature: " + format_signature(signature))
 		try:
-			# sender <-> recipient csere bizonyit
+			## sender <-> recipient csere bizonyit
 			self.sender.get_signer_object().verify(self.hash_transaction(), signature)
 			print("The signature is valid.")
 			if (sender.balance >= value):

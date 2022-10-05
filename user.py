@@ -17,3 +17,4 @@ class User:
 
 	def get_signer_object(self):
 		return self._signer_object
+

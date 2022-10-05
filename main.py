@@ -12,7 +12,7 @@ def main():
 	Peter = User("Peter", 100)
 	John = User("John", 100)
 	t1 = Transaction(Alice, Bob, 100).get_transaction()
-	Transaction(Alice, Peter, 100)  # nincs balance, nem mukodik
+	Transaction(Alice, Peter, 100)  ## nincs balance, nem mukodik
 	t2 = Transaction(Bob, Alice, 50).get_transaction()
 	t3 = Transaction(Bob, Peter, 50).get_transaction()
 	t4 = Transaction(Peter, John, 50).get_transaction()
